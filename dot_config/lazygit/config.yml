@@ -1,0 +1,11 @@
+git:
+  paging:
+    colorArg: always
+    pager: diff-so-fancy
+customCommands:
+  - key: "C"
+    command: "git cz"
+    description: "Commit with commitizen"
+    context: "files"
+    loadingText: "Opening commitizen commit tool..."
+    subprocess: true
