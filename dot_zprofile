@@ -4,18 +4,16 @@ source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
 
 export EDITOR="nvim"
-export LESS=-R # for `chezmoi diff`
+export LESS="-R" # for `chezmoi diff`
 export CC="clang"
 export CXX="clang++"
 
 # wsl specific environment variables
 # manually add some PATHs here since I disabled `interop.appendWindowsPath` in etc/wsl.conf
 if [[ -v WSL_DISTRO_NAME ]] then
-  path+=(
-    # for neovim clipboard
-    "/mnt/c/Windows/System32"
-    "/mnt/c/Windows/System32/WindowsPowerShell/v1.0"
+  export BROWSER="wslview"
 
+  path+=(
     "/mnt/c/Program Files/Microsoft VS Code/bin"
     "/mnt/c/Program Files/Docker/Docker/resources/bin"
   )
