@@ -58,10 +58,7 @@ zmodule romkatv/powerlevel10k
 
 zmodule zsh-users/zaw
 
-zmodule ohmyzsh/ohmyzsh --root lib --source clipboard.zsh
-zmodule ohmyzsh/ohmyzsh --root lib --source completion.zsh
 zmodule ohmyzsh/ohmyzsh --root lib --source directories.zsh
-zmodule ohmyzsh/ohmyzsh --root lib --source functions.zsh
 zmodule ohmyzsh/ohmyzsh --root plugins/git
 zmodule ohmyzsh/ohmyzsh --root plugins/tmux
 
