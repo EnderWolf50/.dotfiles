@@ -1,8 +1,6 @@
 export ZSH_TMUX_DEFAULT_SESSION_NAME="main"
 
-source /usr/share/doc/fzf/examples/key-bindings.zsh
-source /usr/share/doc/fzf/examples/completion.zsh
-
+export FZF_TMUX_OPTS="-p80%,60%"
 export EDITOR="nvim"
 export LESS="-R" # for `chezmoi diff`
 export CC="clang"
