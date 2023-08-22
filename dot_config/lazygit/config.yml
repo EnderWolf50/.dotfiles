@@ -1,11 +1,11 @@
 git:
   paging:
     colorArg: always
-    pager: diff-so-fancy
+    pager: delta --dark --paging=never
 customCommands:
-  - key: "C"
-    command: "git cz"
-    description: "Commit with commitizen"
-    context: "files"
-    loadingText: "Opening commitizen commit tool..."
+  - key: <C-c>
+    command: git cz
+    description: Commit with commitizen
+    context: files
+    loadingText: Opening commitizen commit tool...
     subprocess: true
