@@ -36,6 +36,10 @@ zmodule utility
 
 # Additional completion definitions for Zsh.
 zmodule zsh-users/zsh-completions --fpath src
+# Homebrew completions
+if type brew &>/dev/null; then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+fi
 # Enables and configures smart and extensive tab completion.
 # completion must be sourced after all modules that add completion definitions.
 zmodule completion
