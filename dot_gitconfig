@@ -12,9 +12,11 @@
 [diff]
   colorMoved = default
 [credential "https://github.com"]
-	helper = !/home/linuxbrew/.linuxbrew/Cellar/gh/2.32.1/bin/gh auth git-credential
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = !/home/linuxbrew/.linuxbrew/Cellar/gh/2.32.1/bin/gh auth git-credential
+	helper = 
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
 [init]
 	defaultBranch = main
 [user]
