@@ -90,8 +90,10 @@ return {
     ---@class PluginLspOpts
     opts = {
       ---@type lspconfig.options
+      ---@diagnostic disable-next-line: missing-fields
       servers = {
         -- pyright will be automatically installed with mason and loaded with lspconfig
+        ---@diagnostic disable-next-line: missing-fields
         pyright = {},
       },
     },
@@ -103,7 +105,7 @@ return {
     dependencies = {
       "jose-elias-alvarez/typescript.nvim",
       init = function()
-        require("lazyvim.util").on_attach(function(_, buffer)
+        require("lazyvim.util").lsp.on_attach(function(_, buffer)
           -- stylua: ignore
           vim.keymap.set( "n", "<leader>co", "TypescriptOrganizeImports", { buffer = buffer, desc = "Organize Imports" })
           vim.keymap.set("n", "<leader>cR", "TypescriptRenameFile", { desc = "Rename File", buffer = buffer })
@@ -113,8 +115,10 @@ return {
     ---@class PluginLspOpts
     opts = {
       ---@type lspconfig.options
+      ---@diagnostic disable-next-line: missing-fields
       servers = {
         -- tsserver will be automatically installed with mason and loaded with lspconfig
+        ---@diagnostic disable-next-line: missing-fields
         tsserver = {},
       },
       -- you can do any additional lsp server setup here

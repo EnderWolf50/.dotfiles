@@ -10,10 +10,10 @@ return {
       },
     },
   },
-  {
-    "echasnovski/mini.surround",
-    opts = {
-      n_lines = 1000,
-    },
-  },
+  -- {
+  --   "echasnovski/mini.surround",
+  --   opts = {
+  --     n_lines = 1000,
+  --   },
+  -- },
 }

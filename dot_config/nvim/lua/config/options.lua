@@ -6,21 +6,5 @@ local opt = vim.opt
 
 opt.scrolloff = 8
 
--- WSL clipboard
--- if vim.fn.has("wsl") == 1 then
---   vim.g.clipboard = {
---     name = "WslClipboard",
---     copy = {
---       ["+"] = "clip.exe",
---       ["*"] = "clip.exe",
---     },
---     paste = {
---       ["+"] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
---       ["*"] = 'powershell.exe -c [Console]::Out.Write($(Get-Clipboard -Raw).tostring().replace("`r", ""))',
---     },
---     cache_enabled = 0,
---   }
--- end
-
 -- Python virtualenv for Neovim
 vim.g.python3_host_prog = "/home/kerati/.pyenv/versions/neovim/bin/python"
