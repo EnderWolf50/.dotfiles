@@ -152,7 +152,7 @@ if [[ -v WSL_DISTRO_NAME ]] then # wsl specific
 fi
 
 # keybindings
-bindkey -s '^f' "tms\n"
+bindkey -s '^f' "tmux-sessionizer\n"
 # }}} End configuration added by Zim install
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
