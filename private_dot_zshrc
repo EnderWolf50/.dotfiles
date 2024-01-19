@@ -183,9 +183,13 @@ export PATH="$PNPM_HOME:$PATH"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-
 # bun completions
 [ -s "/home/kerati/.bun/_bun" ] && source "/home/kerati/.bun/_bun"
+
+# go
+if command -v go &> /dev/null; then
+  PATH="$(go env GOPATH)/bin:$PATH"
+fi
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
