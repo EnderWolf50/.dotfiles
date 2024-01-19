@@ -69,3 +69,4 @@ zmodule joke/zim-chezmoi
 zmodule joke/zim-github-cli
 
 zmodule Aloxaf/fzf-tab
+zmodule grigorii-zander/zsh-npm-scripts-autocomplete
