@@ -143,7 +143,6 @@ unset key
 
 # aliases
 alias vim="nvim"
-alias cm="chezmoi"
 alias lg="lazygit"
 alias gcz="git cz"
 
