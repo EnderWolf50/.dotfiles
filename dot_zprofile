@@ -1,5 +1,6 @@
 export ZSH_TMUX_DEFAULT_SESSION_NAME="main"
 export ZSH_TMUX_AUTOSTART=true
+export ZSH_TMUX_AUTOQUIT=false
 
 export FZF_TMUX_OPTS="-p80%,60%"
 export EDITOR="nvim"
